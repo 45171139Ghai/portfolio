@@ -1,0 +1,153 @@
+@import '_base';
+
+.projects{
+    margin-top: 4rem;
+    background-color: $grey;
+    
+    .shape-container{
+    
+        width: 100%;
+        max-height: 100px;
+        margin: 0 auto;
+        }
+
+    .project-container{
+        position: relative;  
+        }
+
+
+    .project__title {
+        position: absolute;
+        color: $ascent-color;
+        background-color: $light;
+        left: 40%;
+        top: .65em;
+        text-align: center;
+        padding: .70em;
+        }
+
+    @media only screen and (max-width: 650px) {
+
+        .project__title {
+            top: .345em;
+            font-size: .85em;
+            }
+        
+    }
+
+    .project-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1.5em;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas:
+         "title"
+         "content"
+         "img"
+        ;
+
+        .feature-container {
+            margin-top: 6em;
+
+            .film-title{
+                text-transform: uppercase;
+                }
+
+            .laptop {
+                margin: 1em 1em 0 0;
+                width: 3em;
+                }
+
+            .ruler {
+                margin: 1em 1em 0 0;
+                width: 1.75em;
+                }
+           
+            .symbols-and-text {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0,1fr));
+                grid-template-areas: "symbol-1 content"
+                                     "symbol-2 content-2";
+
+                .laptop{
+                    grid-area: symbol-1;
+                    }
+
+                .ruler {
+                    grid-area: symbol-2;
+                 }
+
+                .content-2 {
+                    grid-area: content-2;
+                    }
+
+
+
+                & p {
+                    grid-area: content;
+                    margin-left: -10em;
+                    
+                    color: $ascent-color;
+                    }
+
+                @media  screen and (min-width: 38em) {
+                    & p {
+                        margin-left: -6em;
+                    }
+                } // close @media
+
+                .content-2 {
+                    margin-bottom: 6em;
+                }
+
+                .btn-details {
+                    margin: 0 auto;
+                    }
+
+            } // text symbol class
+
+
+    
+        } // close feature
+
+        
+    }
+
+    .project-image {
+        width: 100%;  
+        }
+
+    .project-image {
+        grid-area: img;
+
+        }
+
+    
+
+
+    @media  screen and (min-width: 40.6em) {
+        .project-1 {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5em;
+            grid-template-areas:
+         "img content"
+         "img .";
+        } // close project one class
+
+        .project-image {
+            margin-top: 6em; 
+        }// close image class
+
+        
+    }
+
+
+    
+    
+}
+
+
+
+

@@ -1,0 +1,19 @@
+@import '_base';
+
+.project-background {
+    background-color: white;
+}
+
+.img-2 {
+    margin-top: em;
+}
+
+
+.proTwoBtn {
+    background-color: $blue;
+    color: $ascent-color;
+    &:hover{
+       box-shadow: inset 300px 0 0 0 $ascent-color;;
+       color: $light;
+    }
+}

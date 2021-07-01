@@ -1,0 +1,73 @@
+
+
+@import '_base';
+
+
+nav {
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+    padding: .8em;
+    
+    transition: all 1000ms ease-in-out;
+    background-color: $blue;  
+    
+
+    .links {
+      display: flex;
+      justify-content: center;
+      transition: all 100ms ease-in 3s;
+      
+      // width: 60%; 
+
+      & a{
+          text-decoration: none;
+          padding: 1em 1em;
+          font-size: 1em;
+          letter-spacing: .25em;
+          color: $ascent-color;
+          font-family: $secondary;
+          text-transform: uppercase;
+          
+          &:hover{
+            text-decoration: .25em $light underline;
+            opacity: 60%;
+            
+          }
+         
+        } 
+
+        @media (min-width: 800px) {
+
+          & a{
+            
+            padding: 1em 1.5em;
+          }
+        }
+    } // close links
+
+    .logo{
+      margin-right: auto;
+      & a {
+          text-decoration: none;
+          font-size: 1.25em;
+          text-transform: uppercase;
+          font-family: $secondary;
+          color: $ascent-color;
+          color: $light;
+          opacity: $opacity;
+        }
+    } // close logo class
+
+    ul {
+      list-style: none;
+    }
+  
+  } // end of nav
+
+
+  
+
+  
+
+  
