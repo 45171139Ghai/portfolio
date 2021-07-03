@@ -1,0 +1,47 @@
+@import '_base';
+
+
+.section-container{
+    margin-top: 8em;
+
+} // close section
+
+.university-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    margin-top: 5em;
+
+    grid-template-areas: 
+        "symbol" "university";
+    .university-symbol {
+        width: 100%;
+        height: 5em;
+        grid-area: symbol;
+        margin-left: -4.5em;
+    }
+
+    p {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    h2{
+        grid-area: university;
+    }
+
+    @media  (min-width:40.6em) {
+        .university-symbol {
+            
+            margin-left: -8.5em;
+        }
+        
+    }
+
+} // close grid
+
+
+

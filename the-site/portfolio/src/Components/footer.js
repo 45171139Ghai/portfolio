@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+
 import './css/footer.scss';
 
  function Footer () {
@@ -10,9 +12,9 @@ import './css/footer.scss';
                     </div>
 
                     <ul className = "links links--footer">
-                        <li><a  href="#">Projects</a></li>
-                        <li><a  href="#">contact</a></li>
-                        <li><a  href="#">About</a></li>
+                        <li><Link to="/projects" className="a" href="#">Projects</Link></li>
+                        <li><Link to="/contact" className="a" href="#">Contact</Link></li>
+                        <li><Link to="/" className="a" href="#">Home</Link></li>
                     </ul>
                 </nav>
             

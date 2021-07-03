@@ -1,12 +1,12 @@
-import image from './lighthouse.png';
-import laptop from './laptop.svg';
-import ruler from './ruler-r.svg';
+import React from 'react';
+
 import './css/projects.scss';
 import './css/project-2.scss';
 import '../index.scss';
 
 
-function ProjectTwo() {
+
+function ProjectTwo({name, content, symbolOne, symbolTwo, image}) {
     return (
         <div clasName="content-wrapper">
             <section className="projects">
@@ -14,18 +14,18 @@ function ProjectTwo() {
                 <section className="project-1 project-background">
                     <div className="feature-container">
                          <div className="film-title">
-                            <h3>Yoga Studio</h3>
+                            <h3>{ name}</h3>
                           </div>
 
-                          <p>Current site I am working on. It's a basic yoga studio website. More details 
-                              coming soon <br></br>
+                          <p>
+                            {content}
                           </p> 
                           
                           <div className="symbols-and-text">
-                            <img className="laptop" src={laptop} alt=""/>
+                            <img className="laptop" src={symbolOne} alt=""/>
                             <p>Web Development</p>
 
-                            <img className="ruler" src={ruler} alt=""/>
+                            <img className="ruler" src={symbolTwo} alt=""/>
                             <p className="content-2">Web Design</p>
 
                             <button className="m-btn btn-details proTwoBtn"> See Details</button>

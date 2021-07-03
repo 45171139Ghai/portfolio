@@ -1,0 +1,55 @@
+@import '_base';
+
+.grid-1{
+    position: absolute;
+    margin: 5em 0;
+
+    .image-2{
+        position: relative;
+        width: 15.5em;
+        
+       
+        transform: translateY(-25em)
+    }
+
+    @media (min-width: 550px) {
+
+        .image-2{
+            position: relative;
+            width: 20.5em;
+            transform: translateY(-28em)
+    
+        }
+        
+        .image{
+            width: 20.5em; 
+        }
+
+
+        .section-background {
+           
+            width: 23em;
+            height: 34em;
+            left: 80%;            
+        }
+    } // close media
+}
+
+
+
+.section-background {
+    position: relative;
+    left: 60%;
+    width: 19em;
+    height: 30em;
+    display: flex;
+    background-color: #5BECC0;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 15.5em;
+    opacity: 75%;
+    
+}

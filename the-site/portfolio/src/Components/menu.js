@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './css/menu.scss';
 import '../index.scss'
 
@@ -11,9 +12,9 @@ import '../index.scss'
                     <a href="index.html" className="logo-link">Alex Thon Ghai</a>
                     </div>
                     <ul className = "links">
-                        <li><a  href="#">Projects</a></li>
-                        <li><a  href="#">contact</a></li>
-                        <li><a  href="#">About</a></li>
+                        <li><Link className="a" to="/">Home</Link></li>
+                        <li><Link className="a" to="/projects">Projects</Link></li>
+                        <li><Link className="a" to="/contact">contact</Link></li>
                     </ul>
                 </nav>
             </div>
